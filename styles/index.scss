@@ -1,0 +1,374 @@
+
+
+// color: #DCA16D;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html { 
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: 'Maven Pro', sans-serif;
+    background: #F8F8F8;
+  }
+          
+  .custom-toggler.navbar-toggler { 
+    border-color: none; 
+  } 
+    
+  .custom-toggler .navbar-toggler-icon { 
+    background-image: url( 
+"data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"); 
+} 
+  
+  img { 
+    display: block;
+    width: 100%;
+  }
+
+  a { 
+    color: #333 !important;
+  }
+
+  a:hover {
+    text-decoration: none !important;
+  }
+
+
+
+
+  // NAVBAR SECTION
+
+  .navbar-brand { 
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+    color: #333 !important;
+  }
+
+  .navbar-nav li a { 
+    text-transform: uppercase;
+    color: #335c67;
+    font-weight: 500;
+    margin: 0 15px;
+  }
+
+
+
+  // NAVBAR MOBILE RESPONSIVE 
+
+  @media  (max-width: 990px) { 
+
+    .navbar-collapse ul { 
+      display: flex;
+      justify-content: space-between !important;
+      align-items: center;
+    }
+
+
+
+
+  }
+
+
+  // HERO SECTION
+
+  #hero { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: calc(100vh - 90px);
+
+        .textBx { 
+          color: #333;
+          font-family: 'Roboto Condensed', sans-serif;
+
+              h2 { 
+                font-size: 3.2rem;
+
+                  span { 
+                    font-weight: bold;
+                    letter-spacing: 1px;
+                  }
+              }
+
+              h3 { 
+                margin-bottom: 30px;
+              }
+        }
+
+        .home-btn { 
+          background: #696662;
+          color: #fff !important;
+          padding: 10px 20px;
+          text-decoration: none;
+          text-transform: capitalize;
+          letter-spacing: 2px;
+          font-weight: 500;
+          font-size: 0.8rem;
+
+          border-radius: 50px;
+
+        }
+
+        .home-btn:hover { 
+          background: #474644;
+        }
+
+  }
+
+
+  // HERO SECTION MOBILE RESPONSIVE 
+
+  @media  (max-width: 950px) { 
+
+    .textBx h2 { 
+      font-size: 2.9rem !important;
+      margin: 5px 10px;
+
+    }
+
+    .textBx h3 { 
+      font-size: 1.6rem;
+      margin: 5px 10px;
+    }
+
+   }
+
+   @media (max-width: 575.98px) { 
+
+        .textBx h2 { 
+          font-size: 2.5rem !important;
+
+        }
+
+        .textBx h3 { 
+          font-size: 1.4rem;
+        }
+
+   }
+
+
+
+
+
+  // ABOUT ME SECTION
+
+   #about { 
+      color: #333;
+      padding: 20px;
+
+        h2 { 
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-family: "Roboto Condensed", sans-serif;
+            margin: 40px 0;
+        }
+
+        h3 { 
+          margin-bottom: 15px;
+        }
+
+
+
+   }
+
+  // ABOUT ME MOBILE RESPONSIVE 
+
+  @media (max-width: 991.98px) { 
+
+      #about h2 { 
+        font-size: 1.8rem;
+        margin: 30px 0;
+      }
+
+      .contentBx { 
+        margin: 10px 10px;
+
+            h3 { 
+              font-size: 24px;
+            }
+
+            p { 
+              font-size: 15px;
+            }
+      }
+
+      .contentBx img { 
+
+        min-width: 340px;
+
+      }
+
+  } 
+
+  @media (max-width: 570px) { 
+
+    .contentBx img { 
+
+      min-width: 254px;
+
+    }
+
+
+  }
+
+
+
+
+  // SKILLS SECTION
+
+    #skills { 
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      margin: 50px 0;
+      padding: 30px;
+      background-color: #fff;
+
+
+              .skill-con { 
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+
+                      img { 
+                        width: 40px;
+                        margin: 10px 0;
+                      }
+              }
+
+    }
+
+
+    // SKILLS RESPONSIVE
+
+    @media (max-width: 470px) {
+
+        .skill-con img { 
+          width: 80px ;
+        }
+
+    }
+
+
+  // PROJECT SECTION
+
+  #project { 
+    color: #333;
+    margin: 50px 0;
+
+        h2 { 
+          text-transform: uppercase;
+          letter-spacing: 1px;
+          font-family: "Roboto Condensed", sans-serif;
+          margin: 40px 0;
+        }
+
+
+      .proj-con { 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+
+      .proj-box { 
+        margin: 15px 10px;
+
+            img { 
+              max-width: 400px;
+              border: 1px solid #333;
+            }
+
+            img:hover { 
+              opacity: 1;
+              animation: flash 1.5s;
+            }
+
+            @keyframes flash {
+              0% {
+                opacity: .4;
+              }
+              100% {
+                opacity: 1;
+              }
+            }
+      }
+  }
+
+  
+
+  // CONTACT US SECTION
+
+  #contact { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: #333;
+    margin: 50px 0;
+
+
+          .contact-info { 
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            line-height: 27px;
+            margin: 5px 15px;
+
+                  h3 { 
+                    font-family: 'Roboto Condensed', sans-serif;
+                    font-size: 1.8rem;
+                    font-weight: 300;
+                    letter-spacing: 2px;
+                  }
+
+                  .email-txt { 
+                    font-size: 1.9rem;
+                    font-weight: 500;
+                  }
+
+          }
+  }
+
+
+  // CONTACT RESPONSIVE 
+
+      @media (max-width: 780px) { 
+
+        h3 { 
+          font-size: 1.5rem !important;
+        }
+
+        .email-txt { 
+          font-size: 1.6rem !important;
+        }
+
+        .info-p { 
+          font-size: 15px;
+        }
+
+      }
+
+      @media (max-width: 575.98px) { 
+
+        h3 { 
+          font-size: 1.1rem !important;
+        }
+
+        .email-txt { 
+          font-size: 1.2rem !important;
+        }
+
+      }
